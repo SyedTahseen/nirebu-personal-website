@@ -1,7 +1,7 @@
 {
-  "name": "nirebu",
+  "name": "nirebu-personal-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal website for Nicolò Rebughini",
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {
@@ -10,14 +10,24 @@
     "browser-sync-client": "^2.26.2",
     "bulma": "^0.7.2",
     "concurrently": "^4.1.0",
+    "copyfiles": "^2.1.0",
+    "rimraf": "^2.6.2",
     "sass": "^1.15.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start -s -f . --host localhost --port 3000",
-    "watch-sass": "sass --style compressed --watch ./scss/main.scss ./styles/style.css",
-    "dev": "concurrently \"npm run watch-sass\" \"npm run browser-sync\""
+    "watch-sass": "sass --watch ./scss/main.scss ./styles/style.css",
+    "dev": "concurrently \"npm run watch-sass\" \"npm run browser-sync\"",
+    "build-sass": "sass --style compressed ./scss/main.scss ./styles/style.css",
+    "clean-build": "rimraf build/*",
+    "copy": "copyfiles styles/** build ;copyfiles img/** build ; copyfiles index.html build",
+    "clean-copy": "npm run clean-build && npm run copy"
   },
   "author": "Nicolò Rebughini",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
 }

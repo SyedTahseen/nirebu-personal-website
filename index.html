@@ -12,32 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="./styles/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet">
-		<style>
-			.center {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			.role-image {
-				max-width: 256px;
-			}
-			.roles ul {
-				list-style: inside;
-				list-style-type: none;
-				list-style-image: none;
-				margin-left: 0;
-			}
-			.bio {
-				margin-top: 32px;
-			}
-			.nirebu-title {
-				font-family: 'Capriola', sans-serif;
-				background-image: linear-gradient(to bottom, #940DFF, #6500E5);
-				-webkit-background-clip: text;
-				background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-		</style>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -46,42 +20,51 @@
 		<nav class="navbar" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand level">
 				<div class="navbar-item">
-					<div class="title nirebu-title">#! /nirebu</div>
+					<div class="title nirebu-title has-background-gradient">#! /nirebu</div>
 				</div>
 				<div class="navbar-item level-right">
 						<a class="button is-primary">Click?</a>
 					</div>
 			</div>
 		</nav>
-		<section class="hero is-fullheight-with-navbar is-primary">
+		<section class="hero is-fullheight-with-navbar is-primary has-bg-img">
 			<div class="hero-body">
 				<div class="container has-text-centered">
-					<h1 class="title">Here there will be a picture! Maybe a nice one, or an illustration</h1>
-					<h2 class="subtitle">Something clever?</h2>
+					<h1 class="title">Hello, I'm Nicol&ograve;!</h1>
+					<h2 class="subtitle">Sysadmin and learner</h2>
 				</div>
 			</div>
 		</section>
-		<section class="bio">
+		<section class="bio has-background-gradient">
 			<div class="container">
-				<div class="columns is-centered has-text-centered">
-					<div class="column is-two-thirds">
-						<h1 class="title">Hello there</h1>
-						<h2 class="subtitle is-size-5">
-							I started my career as a video post production technician. In the last few years I focused mainly on process automation and quality control systems and recently I fully made the move to being a system&nbsp;administrator. <br />
-							I'm currently interested in automating Linux servers provisioning, configuration deployment and orchestration via Ansible.<br />
+				<div class="columns is-centered has-text-centered is-narrow">
+					<div class="column">
+						<h1 class="title has-text-white">About me</h1>
+						<div class="is-flex is-horizontal-center">
+							<figure class="image is-128x128 profile-picture">
+									<img class="is-rounded" src="/img/profile.jpg" />
+							</figure>
+						</div>						
+						<h2 class="subtitle is-size-5 has-text-white">
+							I started my career as a video post production technician. In the last few years I focused mainly on process automation and quality control systems and recently I fully made the move to being a system&nbsp;administrator.
+						</h2>
+						<h2 class="subtitle is-size-5 has-text-white">
+							I'm currently interested in automating Linux servers provisioning, configuration deployment and orchestration via Ansible.
+						</h2>
+						<h2 class="subtitle is-size-5 has-text-white">
 							On top of that I'm exploring modern web development toying with the MERN stack (MongoDB, Express, React and Node)
 						</h2>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section roles">
+		<section class="section">
 			<div class="container is-narrow">
 				<div class="box">
 					<div class="content has-text-centered">
 						<div class="columns is-centered">
-							<div class="column">
-								<h1 class="title nirebu-title">#! /SysAdmin</h1>
+							<div class="column role">
+								<h1 class="title nirebu-title has-background-gradient">#! /SysAdmin</h1>
 								<p class="list-title has-text-primary has-text-weight-normal">
 									Things I work on:
 								</p>
@@ -99,8 +82,8 @@
 									<li>bash</li>
 								</ul>
 							</div>
-							<div class="column">
-								<h1 class="title nirebu-title">&lt;WebDev /&gt;</h1>
+							<div class="column role">
+								<h1 class="title nirebu-title has-background-gradient">&lt;WebDev /&gt;</h1>
 								<p class="list-title has-text-primary has-text-weight-normal">
 										Things I'm learning:
 								</p>
