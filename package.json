@@ -21,7 +21,7 @@
     "dev": "concurrently \"npm run watch-sass\" \"npm run browser-sync\"",
     "build-sass": "sass --style compressed ./scss/main.scss ./styles/style.css",
     "clean-build": "rimraf build/*",
-    "copy": "copyfiles styles/** build ;copyfiles img/** build ; copyfiles index.html build",
+    "copy": "copyfiles styles/** build ; copyfiles img/** build ; copyfiles index.html build",
     "clean-copy": "npm run clean-build && npm run copy",
     "deploy": "npm run clean-copy && firebase deploy"
   },
