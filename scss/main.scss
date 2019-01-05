@@ -7,6 +7,10 @@ $link-hover:#940DFF;
 .has-bg-img { background: url('/img/hero.jpg') center center; background-size: cover; }
 .is-horizontal-center { justify-content: center; }
 
+.roles {
+	margin-top: -125px;
+}
+
 .role {
 	> ul {
 		list-style: inside !important;
@@ -16,7 +20,7 @@ $link-hover:#940DFF;
 	}
 }
 			
-.bio { padding: 32px 16px; }
+.bio { padding: 32px 16px; padding-bottom: 125px; }
 .profile-picture { margin-bottom: 24px; }
 
 .nirebu-title {
